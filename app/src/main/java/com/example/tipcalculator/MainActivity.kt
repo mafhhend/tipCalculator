@@ -99,7 +99,6 @@ fun MainContent(){
     val splitByState = remember {
         mutableStateOf(1)
     }
-//    val range = IntRange(start = 1, endInclusive = 100)
     val tipAmountState = remember {
         mutableStateOf(0.0)
     }
@@ -222,7 +221,7 @@ fun BillForm(
                     )
                 }
                 Column(
-                    verticalArrangement = Arrangement.Center,
+                        verticalArrangement = Arrangement.Center,
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                     Text(text = "$tipPercentage %")
